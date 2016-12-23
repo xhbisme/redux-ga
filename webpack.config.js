@@ -26,7 +26,7 @@ module.exports = {
 		publicPath : '/dist',
 		filename : 'main.bundle.js',
 		host : '0.0.0.0',
-		port : 8080
+		port : 8888
 	},
 	plugins:[
 		new webpack.ProvidePlugin({
