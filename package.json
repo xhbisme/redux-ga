@@ -7,13 +7,21 @@
     "test": "jest",
     "dev": "webpack-dev-server --progress --colors --config webpack.config.js"
   },
+  "jest": {
+    "unmockedModulePathPatterns": [
+      "react",
+      "react-dom",
+      "react-addons-test-utils",
+      "enzyme"
+    ]
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "immutable": "",
     "jquery": "^2.2.1",
-    "react": "^0.14.6",
-    "react-dom": "^0.14.6",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
     "react-redux": "^4.0.6",
     "redux": "^3.0.5"
   },
@@ -26,7 +34,9 @@
     "babel-preset-react": "^6.3.13",
     "classnames": "^2.2.3",
     "css-loader": "^0.23.1",
+    "enzyme": "^2.7.0",
     "jest": "^18.0.0",
+    "react-addons-test-utils": "^15.4.1",
     "style-loader": "^0.13.0",
     "webpack": "^1.12.10",
     "webpack-dev-server": "^1.14.0"
